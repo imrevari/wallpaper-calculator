@@ -57,7 +57,7 @@ public class Main {
     static void printCubicRooms(List<Integer> cubicRooms){
         if(!cubicRooms.isEmpty()){
             System.out.println("Rooms with cubic shape:");
-            cubicRooms.sort(Comparator.comparingInt(a -> a));
+            cubicRooms.sort(Comparator.reverseOrder());
             for (Integer measurement : cubicRooms) {
                 System.out.printf("%1$sx%1$sx%1$s%n", measurement);
             }
